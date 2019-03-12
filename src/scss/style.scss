@@ -1,0 +1,12 @@
+@import "component/color.scss";
+@import "component/initial.scss";
+
+@import "component/custom.scss";
+
+#root {
+  background-color: $muted;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
