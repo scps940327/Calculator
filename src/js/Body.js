@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import NumberBlock from "./components/container/NumberBlock";
+import FunctionsBlock from "./components/container/FunctionsBlock";
+import CalcBlock from "./components/container/CalcBlock";
+
 class Body extends React.Component {
    constructor() {
       super();
@@ -13,6 +17,15 @@ class Body extends React.Component {
    render() {
       return (
          <div className="row">
+         	<div className="col-9">
+         		<NumberBlock data={this.state.number} />
+         	</div>
+         	<div className="col-3">
+         		<FunctionsBlock data={this.state.functions} />
+         	</div>
+         	<div className="col">
+         		<CalcBlock data={this.state.calc} />
+         	</div>
          </div>
       );
    }
