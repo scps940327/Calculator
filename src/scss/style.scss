@@ -1,7 +1,16 @@
 @import "component/color.scss";
-@import "component/initial.scss";
+//@import "component/initial.scss";
 
 @import "component/custom.scss";
+
+div{
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
 
 #root {
   background-color: $muted;
@@ -9,4 +18,50 @@
   align-items: center;
   height: 100vh;
   text-align: center;
+  font-family: Arial;
+}
+
+.content_wrapper{
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(black, 0.4);
+  background-color: $main_color;
+  margin: auto;
+  color: white;
+  overflow: hidden;
+}
+
+.btn{
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  font-size: 24px;
+  box-sizing: border-box;
+  padding: 0;
+  border-radius: 1rem;
+  color: #FFF;
+  border: 0;
+}
+
+.result_txt_wrapper{
+  overflow: hidden;
+  max-width: 100%;
+
+  >div{
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .text-primary{
+    height: 33px;
+  }
+}
+
+.btn-trans{
+  background: #00c4ff;
+  background: -moz-linear-gradient(left, #00c4ff 0%, #6c00ff 100%);
+  background: -webkit-linear-gradient(left, #00c4ff 0%,#6c00ff 100%);
+  background: linear-gradient(to right, #00c4ff 0%,#6c00ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c4ff', endColorstr='#6c00ff',GradientType=1 );
+  padding-right: 30px;
 }

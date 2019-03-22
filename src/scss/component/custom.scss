@@ -1,9 +1,16 @@
 // Required
+$primary: #00C4FF;
+$secondary: #041936;
 $muted: #E8E8E8;
+
+$grid-gutter-width: 32px;
+
+$body-color: #CCC;
+
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 
 @import "node_modules/bootstrap/scss/grid";
 @import "node_modules/bootstrap/scss/utilities";
-@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/buttons";
