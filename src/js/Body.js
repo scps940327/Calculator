@@ -26,7 +26,6 @@ class Body extends React.Component {
 	componentDidMount(){
 		window.addEventListener('keypress',(e) => {
 			let ketBoardWord = String.fromCharCode(e.which);
-			console.log(ketBoardWord, e.which);
 
 			if(e.which == 13){
 				this.calcResult();
@@ -121,7 +120,7 @@ class Body extends React.Component {
 		let formulaResult = this.state.formula.slice(0),
 		formulaResultType = this.state.formulaType.slice(0);
 
-		console.log(formulaResult);
+		//console.log(formulaResult);
 
 		if(formulaResult.length > 0 && formulaResultType[formulaResultType.length - 1] != 'func'){
 			let i = 0;
@@ -151,7 +150,7 @@ class Body extends React.Component {
 
 			i = 0;
 			while(i < formulaResult.length){
-				switch (formulaResult[i]) {
+				switch (formulaResult[i]) { 
 					case '':
 						i = formulaResult.length;
 						break;
